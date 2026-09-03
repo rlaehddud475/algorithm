@@ -26,7 +26,7 @@ void insert_data(string data, int position) {
 
 	katok.push_back("None");
 	int kLen = len(katok);
-	printArray(katok);
+	
 
 
 	for (int i = kLen - 1; i > position; i--) {
