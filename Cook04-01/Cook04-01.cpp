@@ -27,7 +27,7 @@ void printNodes(Node* start)
 		for (int i = 0; i < len(memory); i++)
 			delete memory[i];
 	}
-	void instertNode(string findData, string insertData) {
+	/*void instertNode(string findData, string insertData) {
 		Node* node;
 		if (head->data == findData) {
 			node = new Node;
@@ -56,7 +56,26 @@ void printNodes(Node* start)
 		node->data = insertData;
 		current->link = node;
 		memory.push_back(node);
-	}
+	}*/
+	//void deleteNode(string deleteData) {
+	//	if (head->data == deleteData) {
+	//		current = head;
+	//		head = head->link;
+	//		current->data= "None";
+	//		return;
+	//	}
+	//	current = head;
+	//	while (current->link != NULL) {
+	//		pre = current;
+	//		current = current->link;
+	//		if (current->data == deleteData) {
+	//			pre->link = current->link;
+	//			current->data = "None";
+	//			return;
+	//		}
+	//	}
+	//}
+
 	int main()
 	{
 		Node* node=new Node;
@@ -72,11 +91,17 @@ void printNodes(Node* start)
 			memory.push_back(node);
 		}
 		printNodes(head);
-		instertNode("다현", "화사");
-		printNodes(head);
-		instertNode("사나", "솔라");
-		printNodes(head);
-		instertNode("재남", "문별");
+		//deleteNode("다현");
+		///*instertNode("다현", "화사");*/
+		//printNodes(head);
+		///*instertNode("사나", "솔라");*/
+		//deleteNode("쯔위");
+		//printNodes(head);
+		//deleteNode("지효");
+		///*instertNode("재남", "문별");*/
+		//printNodes(head);
+
+		//deleteNode("재남");
 		printNodes(head);
 		freeMemory();
 	
