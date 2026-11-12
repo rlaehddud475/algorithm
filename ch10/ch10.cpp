@@ -28,20 +28,40 @@
 //
 //	}
 //}
-string tab = "";
-int pow(int x, int n) {
-	
-	tab += "  ";
+//string tab = "";
+//int pow(int x, int n) {
+//	
+//	tab += "  ";
+//	if (n == 0) {
+//		
+//		return 1;
+//	}
+//	println(tab + to_string(x) + "^" + to_string(x)+"^("+to_string(n)+"-1)");
+//	return x * pow(x, n - 1);
+//	
+//	
+//}
+//int main() {
+//	println("2^4");
+//	println("답-->" + to_string(pow(2,4)));
+//}
+
+int fibo(int n) {
 	if (n == 0) {
-		
+		return 0;
+	}else if(n==1) {
 		return 1;
 	}
-	println(tab + to_string(x) + "^" + to_string(x)+"^("+to_string(n)+"-1)");
-	return x * pow(x, n - 1);
-	
-	
+	else
+	{
+		return fibo(n - 1) + fibo(n - 2);
+	}
+
 }
 int main() {
-	println("2^4");
-	println("답-->" + to_string(pow(2,4)));
+	print("피보나치 수--> 0 1");
+	for (int i = 2; i < 20; i++)
+	{
+		print(fibo(i));
+	}
 }
