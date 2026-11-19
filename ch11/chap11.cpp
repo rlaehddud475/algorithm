@@ -1,6 +1,6 @@
 #include "../CookHeader.h"
 
-int findInsertyIdx(Array <int> ary, int data) {
+int findInsertIdx(Array <int> ary, int data) {
 	int findIdx = -1;
 	for (int i = 0; i < len(ary); i++) {
 		if (ary[i] > data) {
@@ -23,13 +23,13 @@ int main(){
 	int insPos;
 
 	testAry = {};
-	insPos = findInsertyIdx(testAry, 55);
+	insPos = findInsertIdx(testAry, 55);
 	println("»ðÀÔÇÒ À§Ä¡ -->" + to_string(insPos));
 	testAry = {33,77,88};
-	insPos = findInsertyIdx(testAry, 55);
+	insPos = findInsertIdx(testAry, 55);
 	println("»ðÀÔÇÒ À§Ä¡ -->" + to_string(insPos));	
 	testAry = { 33,55,77,88 };
-	insPos = findInsertyIdx(testAry, 100);
+	insPos = findInsertIdx(testAry, 100);
 	println("»ðÀÔÇÒ À§Ä¡ -->" + to_string(insPos));
 }
 //Array <int> dataAry = { 188,162,168,120,50,150,177,105 };
